@@ -11,12 +11,12 @@
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
 
-      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        modules = [
-          ./configuration.nix
-          ./system.nix
-          home-manager.nixosModules.default
-        ];
-      };
+    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+      modules = [
+        ./configuration.nix
+        ./system.nix
+        home-manager.nixosModules.default
+      ];
+    };
   };
 }
