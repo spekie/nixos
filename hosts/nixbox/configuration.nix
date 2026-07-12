@@ -126,4 +126,7 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
+
+  hardware.graphics.enable = true;
+  hardware.graphics.enable32Bit = true;
 }

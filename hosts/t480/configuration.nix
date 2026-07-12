@@ -122,4 +122,6 @@
   system.stateVersion = "26.05"; # Did you read the comment?
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  hardware.graphics.enable = true;
 }
