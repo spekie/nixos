@@ -1,19 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  imports = [
-    ./modules/home.nix
-    ./modules/home-manager.nix
-    ./modules/kitty.nix
-    ./modules/sway.nix
-  ];
-
-  environment.systemPackages = with pkgs; [
-    psmisc
-    htop
-    mpv
-  ];
-
   fonts.packages = with pkgs; [
     liberation_ttf
     noto-fonts
