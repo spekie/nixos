@@ -15,10 +15,18 @@
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
 
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.nixbox = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [
-        ./configuration.nix
+        ./hosts/nixbox/configuration.nix
+        ./modules
+        home-manager.nixosModules.default
+      ];
+    };
+    nixosConfigurations.t480 = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
+      modules = [
+        ./hosts/t480/configuration.nix
         ./modules
         home-manager.nixosModules.default
       ];

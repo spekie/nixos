@@ -1,9 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [
-    mpv
-  ];
+  environment.systemPackages = with pkgs; [ mpv ];
 
   hm.programs.mpv = {
     enable = true;

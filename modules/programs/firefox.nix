@@ -12,6 +12,8 @@
         "browser.newtabpage.enabled" = false;
         "browser.startup.homepage" = "chrome://browser/content/blanktab.html";
         "identity.fxaccounts.enabled" = false;
+        "extensions.htmlaboutaddons.recommendations.enabled" = false;
+        "extensions.getAddons.showPane" = false;
         "media.videocontrols.picture-in-picture.video-toggle.enabled" = false;
         "general.autoScroll" = true;
 
@@ -75,6 +77,61 @@
         "browser.ml.linkPreview.longPress" = false;
         "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features" = false;
         "browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons" = false;
+      };
+    };
+
+    profiles.default.search = {
+      force = true;
+      default = "ddg";
+      privateDefault = "ddg";
+
+      engines = {
+        "Nix Packages" = {
+          urls = [
+            {
+              template = "https://search.nixos.org/packages";
+              params = [
+                { name = "channel"; value = "unstable"; }
+                { name = "query";   value = "{searchTerms}"; }
+              ];
+            }
+          ];
+          icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+          definedAliases = [ "@np" ];
+        };
+
+        "Nix Options" = {
+          urls = [
+            {
+              template = "https://search.nixos.org/options";
+              params = [
+                { name = "channel"; value = "unstable"; }
+                { name = "query";   value = "{searchTerms}"; }
+              ];
+            }
+          ];
+          icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+          definedAliases = [ "@no" ];
+        };
+
+        "NixOS Wiki" = {
+           urls = [
+             {
+               template = "https://wiki.nixos.org/w/index.php";
+               params = [
+                 { name = "search"; value = "{searchTerms}"; }
+               ];
+             }
+           ];
+           icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+           definedAliases = [ "@nw" ];
+         };
+         "google".metaData.hidden = true;
+         "amazondotcom-us".metaData.hidden = true;
+         "bing".metaData.hidden = true;
+         "ebay".metaData.hidden = true;
+         "perplexity".metaData.hidden = true;
+         "wikipedia".metaData.hidden = true;
       };
     };
   };

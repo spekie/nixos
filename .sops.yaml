@@ -1,7 +1,0 @@
-keys:
-  - &primary age16hdfnzwff6rc27fqknk0nzp0wfxwkqqtmzkwpemk73nh5mfee3ps0jzdke
-creation_rules:
-  - path_regex: secrets/wg0.conf.bin$
-    key_groups:
-    - age:
-      - *primary

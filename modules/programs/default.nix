@@ -5,9 +5,12 @@
     ./xdg.nix
     ./kitty.nix
     ./fish.nix
+    ./bash.nix
+    ./lf.nix
     ./firefox.nix
     ./mpv.nix
-    ./git.nix
+    ./yt.nix
+    ./vim.nix
     ./steam.nix
   ];
 }

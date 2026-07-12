@@ -10,14 +10,15 @@
     ./wg.nix
     ./fonts.nix
     ./theme.nix
+    ./env.nix
   ];
 
   environment.systemPackages = with pkgs; [
-    psmisc
-    htop
+    nh
     file
-    fastfetch
+    git
     keepassxc
     qbittorrent
+    ffmpeg
   ];
 }
