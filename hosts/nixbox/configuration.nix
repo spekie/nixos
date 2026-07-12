@@ -129,4 +129,16 @@
 
   hardware.graphics.enable = true;
   hardware.graphics.enable32Bit = true;
+
+  fileSystems."/mnt/b" = {
+    device = "/dev/disk/by-uuid/9b5bc326-530b-481f-b6a8-e56ea2aefaf0";
+    fsType = "ext4";
+    options = [ "noatime" ];
+   };
+
+  fileSystems."/mnt/a" = {
+    device = "/dev/disk/by-uuid/6c8e516a-dccf-464b-895e-e3645f4e8613";
+    fsType = "xfs";
+    options = [ "noatime" ];
+   };
 }
