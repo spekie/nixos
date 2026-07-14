@@ -11,6 +11,10 @@
     };
   };
 
+  environment.systemPackages = with pkgs; [
+    adwaita-icon-theme
+  ];
+
   hm.gtk = {
     enable = true;
 

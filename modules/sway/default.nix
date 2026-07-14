@@ -7,13 +7,12 @@
 
   programs.sway.enable = true;
 
-  environment.systemPackages = with pkgs; [
+  programs.sway.extraPackages = with pkgs; [
     swaybg
-    imv
+    swayidle
+    wmenu
     grim
     slurp
-    adwaita-icon-theme
-    gnome-themes-extra
   ];
 
   hm.wayland.windowManager.sway = {
@@ -25,7 +24,7 @@
       terminal = "kitty";
       menu = "wmenu-run";
       startup = [
-        {command = "swaybg -i pics/wallpapers/1407554998567.png -m fill";}
+        {command = "swaybg -i $HOME/pics/wallpapers/1351085837245.png -m fill";}
       ];
       defaultWorkspace = "workspace number 1";
     };

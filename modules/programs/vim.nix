@@ -1,14 +1,9 @@
 { config, pkgs, ... }:
 
 {
-  programs.neovim = {
+  programs.vim = {
     enable = true;
     defaultEditor = true;
-    configure = {
-      customRC = ''
-        set number
-      '';
-    };
   };
 
   hm.programs.vim = {

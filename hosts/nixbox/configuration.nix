@@ -55,7 +55,6 @@
   services.pipewire = {
     enable = true;
     alsa.enable = true;
-    alsa.support32Bit = true;
     pulse.enable = true;
   };
 
@@ -67,7 +66,7 @@
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
-  #     tree
+    #  tree
     ];
   };
 
@@ -76,8 +75,8 @@
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
   environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    wget
+  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+  #  wget
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -125,20 +124,19 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-
   hardware.graphics.enable = true;
-  hardware.graphics.enable32Bit = true;
+
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   fileSystems."/mnt/b" = {
     device = "/dev/disk/by-uuid/9b5bc326-530b-481f-b6a8-e56ea2aefaf0";
     fsType = "ext4";
     options = [ "noatime" ];
-   };
+  };
 
   fileSystems."/mnt/a" = {
     device = "/dev/disk/by-uuid/6c8e516a-dccf-464b-895e-e3645f4e8613";
     fsType = "xfs";
     options = [ "noatime" ];
-   };
+  };
 }

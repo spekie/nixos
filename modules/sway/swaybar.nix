@@ -4,6 +4,7 @@
   hm.wayland.windowManager.sway.config.bars = [{
     position = "top";
     statusCommand = "while date +'%a %b %d %I:%M %p'; do sleep 1; done";
+    #statusCommand = "while date +'%H:%M'; do sleep 1; done";
     #statusCommand = ''while date +"[BAT $(cat /sys/class/power_supply/BAT1/capacity)%] %H:%M"; do sleep 1; done'';
 
     trayOutput = "none";

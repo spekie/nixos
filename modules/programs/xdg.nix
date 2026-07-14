@@ -3,16 +3,20 @@
 {
   environment.systemPackages = with pkgs; [ xdg-user-dirs ];
 
-  environment.etc."xdg/user-dirs.defaults".text = ''
-    DESKTOP=
-    DOWNLOAD=dls
-    TEMPLATES=
-    PUBLICSHARE=
-    DOCUMENTS=docs
-    MUSIC=
-    PICTURES=pics
-    VIDEOS=vids
-  '';
-
-  hm.xdg.enable = true;
+  hm.xdg = {
+    enable = true;
+    userDirs = {
+      enable = true;
+      createDirectories = true;
+      desktop = "$HOME/";
+      music = "$HOME/";
+      projects = "$HOME/";
+      templates = "$HOME/";
+      publicShare = "$HOME/";
+      download = "$HOME/dls" ;
+      documents = "$HOME/docs";
+      pictures = "$HOME/pics";
+      videos = "$HOME/vids";
+    };
+  };
 }
