@@ -20,8 +20,10 @@
     wget
     htop
     btop
+    gotop
     git
     ffmpeg
+    python3
     clang
     rustup
   ];

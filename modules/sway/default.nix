@@ -24,7 +24,7 @@
       terminal = "kitty";
       menu = "wmenu-run";
       startup = [
-        {command = "swaybg -i $HOME/pics/wallpapers/1351085837245.png -m fill";}
+        {command = "swaybg -i $HOME/Pictures/Wallpapers/1351085837245.png -m fill";}
       ];
       defaultWorkspace = "workspace number 1";
     };

@@ -8,16 +8,18 @@
     ./lf.nix
     ./firefox.nix
     ./mpv.nix
-    ./yt-dlp.nix
+    ./mpd.nix
     ./xdg.nix
     ./vim.nix
-    ./steam.nix
+    ./umu-launcher.nix
   ];
 
   environment.systemPackages = with pkgs; [
     imv
+    zathura
     keepassxc
     qbittorrent
     vscodium
+    mkvtoolnix-cli
   ];
 }
