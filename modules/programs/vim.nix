@@ -17,6 +17,10 @@
     extraConfig = ''
       syntax on 
       filetype plugin on 
+      set tabstop=2
+      set shiftwidth=2
+      set ignorecase
+      set incsearch
       set noswapfile
       set nobackup
     '';

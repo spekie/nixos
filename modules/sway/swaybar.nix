@@ -3,9 +3,7 @@
 {
   hm.wayland.windowManager.sway.config.bars = [{
     position = "top";
-    statusCommand = "while date +'%a %b %d %I:%M %p'; do sleep 1; done";
-    #statusCommand = "while date +'%H:%M'; do sleep 1; done";
-    #statusCommand = ''while date +"[BAT $(cat /sys/class/power_supply/BAT1/capacity)%] %H:%M"; do sleep 1; done'';
+    statusCommand = "while date +'%H:%M'; do sleep 1; done";
 
     trayOutput = "none";
 
@@ -15,8 +13,8 @@
     };
 
     colors = {
-      statusline = "#ffffff";
-      background = "#323232";
+      statusline = config.color.foreground;
+      background = config.color.background;
       inactiveWorkspace = {
         border = "#323232";
         background = "#323232";

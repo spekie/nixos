@@ -2,15 +2,13 @@
 
 {
   imports = [
-    ./programs
-    ./sway
     ./home.nix
     ./home-manager.nix
     ./sops.nix
     ./nh.nix
-    ./wg.nix
     ./fonts.nix
     ./theme.nix
+    ./xdg.nix
   ];
 
   environment.systemPackages = with pkgs; [
@@ -18,13 +16,7 @@
     zip
     unzip
     wget
-    htop
-    btop
-    gotop
     git
-    ffmpeg
-    python3
-    clang
-    rustup
+    htop
   ];
 }

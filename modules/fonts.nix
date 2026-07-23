@@ -9,7 +9,12 @@
     noto-fonts-color-emoji
     lato
     roboto
-  ];
+    roboto-mono
+    jetbrains-mono
+  ] ++ (with nerd-fonts; [
+    liberation
+    jetbrains-mono
+  ]);
 
   fonts = {
     fontconfig = {

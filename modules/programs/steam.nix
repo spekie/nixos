@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    umu-launcher
+    steam
   ];
 
   services.pipewire.alsa.support32Bit = true;

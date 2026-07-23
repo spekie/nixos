@@ -7,5 +7,5 @@ let
 in
 
 {
-  imports = [ (mkAliasOptionModule ["hm"] ["home-manager" "users" "spekie"]) ];
+  imports = [ (mkAliasOptionModule ["hm"] ["home-manager" "users" config.username]) ];
 }

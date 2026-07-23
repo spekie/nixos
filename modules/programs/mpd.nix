@@ -2,8 +2,8 @@
 
 {
   environment.systemPackages = with pkgs; [
-    rmpc
-    cava
+    mpd
+    mpc
   ];
 
   hm.services.mpd = {
@@ -14,6 +14,13 @@
       audio_output {
         type "pipewire"
         name "pipewire"
+      }
+
+      audio_output {
+        type "fifo"
+        name "fifo"
+        path "/tmp/mpd.fifo"
+        format "44100:16:2"
       }
     '';
   };

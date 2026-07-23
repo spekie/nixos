@@ -7,7 +7,7 @@
     ];
 
     sessionVariables = rec {
-      NH_FLAKE = "${config.hm.home.homeDirectory}/.config/nixos";
+      NH_FLAKE = config.flakePath;
     };
   };
 }

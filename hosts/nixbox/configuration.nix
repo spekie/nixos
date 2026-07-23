@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./options.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -28,7 +29,9 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
+
   i18n.extraLocales = ["ja_JP.UTF-8/UTF-8"];
+
   # console = {
   #   font = "Lat2-Terminus16";
   #   keyMap = "us";
@@ -125,6 +128,8 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   hardware.graphics.enable = true;
+
+  nixpkgs.config.allowUnfree = true;
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
