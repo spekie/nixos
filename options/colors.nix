@@ -13,6 +13,11 @@
         default = "#111111";
         description = "Secondary color";
       };
+      additional  = lib.mkOption {
+        type = lib.types.str;
+        default = "#111111";
+        description = "Additional color";
+      };
       background = lib.mkOption {
         type = lib.types.str;
         default = "#334fab";

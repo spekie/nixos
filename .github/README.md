@@ -1,65 +1,35 @@
-# Personal NixOS config
+# My NixOS config
 
 ![](/.github/screenshot.png)
 
-## Installation
+# Installation
 
-After following NixOS manual for new installation to generate a new `hardware-configuration.nix` and `configuration.nix` clone this repository:
+On a new NixOS installation, clone this repository:
 
 ```bash
-git clone https://github.com/spekie/nixos.git
+nix-shell -p git --command 'git clone https://github.com/spekie/nixos.git'
 ```
 
-Finish editing `configuration.nix` if necessary, make sure to add a user.
+## Configure
 
-Create a new directory in [hosts](/hosts) named after your hostname and move all of the files from `/etc/nixos` to that directory in the newly cloned repository.
+Create a new directory in [hosts](/hosts) named after your hostname and add your `configuration.nix` and `hardware-configuration.nix` there.
 
-Add your hostname in `flake.nix` and replace the text `HOSTNAME` with your hostname:
+Also create a new [options.nix](/hosts/nixbox/options.nix) file in the host directory and import it from [configuration.nix](/hosts/nixbox/configuration.nix)
+
+Add your hostname in [flake.nix](/flake.nix) replace the text `HOSTNAME` with your hostname:
 
 ```nix
 nixosConfigurations.HOSTNAME = nixpkgs.lib.nixosSystem {
   specialArgs = { inherit inputs; };
   modules = [
     ./hosts/HOSTNAME/configuration.nix
-    ./modules
     home-manager.nixosModules.default
   ];
 };
 ```
 
-Create a new `options.nix` file in the host directory and import it from `configuration.nix`, examples: [options.nix](/hosts/nixbox/options.nix) [configuration.nix](/hosts/nixbox/configuration.nix)
+## Finalise 
 
-Run the following command to install, replace `HOSTNAME` with your hostname:
+Rebuild using the flake and reboot the system.
 
-```bash
-nixos-install --flake .#HOSTNAME
-```
-
-Run the following command to add password for user, replace `USERNAME` with your username:
-
-```bash
-nixos-enter --root /mnt -c 'passwd USERNAME'
-```
-
-## After installation
-
-After a sucessfull install copy your configuration somewhere more accessible like `$HOME/nixos` and define your flake path in `options.nix` where your configuration will reside.
-
-Make sure to change permissions of your configuration:
-
-```bash
-sudo cp -R /etc/nixos/* $HOME
-cd $HOME/nixos
-sudo chown -R USERNAME:users .
-```
-
-Optionally you can delete `/etc/nixos` and symlink it to your configuration/flake path when defined in `options.nix` like this:
-
-```bash
-sudo rm -r /etc/nixos
-sudo ln -s $NH_FLAKE /etc/nixos
-```
-
-## Additional things
-
-Extra drives, hardware configuration, or any other system-level configurations can be done in `configuration.nix`
+Extra drives, hardware configuration additions, or any other system-level configurations should be done in `configuration.nix`

@@ -19,7 +19,6 @@
       specialArgs = { inherit inputs; };
       modules = [
         ./hosts/nixbox/configuration.nix
-        ./modules
         home-manager.nixosModules.default
       ];
     };
@@ -27,7 +26,6 @@
       specialArgs = { inherit inputs; };
       modules = [
         ./hosts/t480/configuration.nix
-        ./modules
         home-manager.nixosModules.default
       ];
     };

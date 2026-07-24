@@ -29,6 +29,7 @@
     python3
     zathura
     ncdu
+    htop
     btop
     gotop
   ];
@@ -40,6 +41,7 @@
 
   color.primary = "#e69d3b";
   color.secondary = "#e69d3b";
+  color.additional = "#e69d3b";
   color.background = "#323232";
   color.foreground = "#ffffff";
 }
