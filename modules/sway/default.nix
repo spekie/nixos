@@ -6,5 +6,7 @@
     ./sway.nix
     ./waybar.nix
     ./bindings.nix
+    ./mako.nix
+    ./tofi.nix
   ];
 }

@@ -5,7 +5,7 @@
     config = rec {
       modifier = "Mod4";
       terminal = "kitty";
-      menu = "wmenu-run";
+      menu = "tofi-drun";
     };
 
     config.keybindings = {
@@ -13,6 +13,8 @@
       "${modifier}+d" = "exec ${menu}";
       "${modifier}+q" = "kill";
       "${modifier}+Shift+q" = "exec 'swaymsg exit'";
+      "${modifier}+s" = "exec 'grim'";
+      "${modifier}+Shift+s" = "exec 'grim -g \"$(slurp)\"'";
     
       "${modifier}+h" = "focus left";
       "${modifier}+j" = "focus down";
@@ -50,7 +52,8 @@
       "${modifier}+v" = "splitv";
       "${modifier}+f" = "fullscreen";
       "${modifier}+Shift+space" = "floating toggle";
-      "${modifier}+space" = "mode_toggle";
+      "${modifier}+Shift+equal" = "gaps inner all plus 5";
+      "${modifier}+Shift+minus" = "gaps inner all minus 5";
     };
   };
 }

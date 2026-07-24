@@ -16,8 +16,8 @@
       statusline = config.color.foreground;
       background = config.color.background;
       inactiveWorkspace = {
-        border = "#323232";
-        background = "#323232";
+        border = config.color.background;
+        background = config.color.background;
         text = "#5c5c5c";
       };
     };

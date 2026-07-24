@@ -4,11 +4,13 @@
   imports = [
     ./home.nix
     ./home-manager.nix
-    ./sops.nix
     ./nh.nix
     ./fonts.nix
     ./theme.nix
     ./xdg.nix
+    ./gpg.nix
+    ./sops.nix
+    ./wg.nix
   ];
 
   environment.systemPackages = with pkgs; [
@@ -17,6 +19,5 @@
     unzip
     wget
     git
-    htop
   ];
 }

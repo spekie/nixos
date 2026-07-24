@@ -43,16 +43,19 @@
         on-click = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
       };
       "battery" = {
-        format = "{icon} {capacity}%";
-        format-icons = [ "" "" "" "" "" ];
-        bat = "BAT2";
+        format = "{icon}  {capacity}%";
+        format-icons = {
+          default = [ "" "" "" "" "" ];
+          charging = [ "󰢟" "󰢜" "󰂆" "󰂇" "󰂈" "󰢝" "󰂉" "󰢞" "󰂊" "󰂋" "󰂅" ];
+        };
+        bat = "BAT1";
         interval = 60;
       };
     };
 
     style = ''
       * {
-        font-family: Roboto;
+        font-family: Roboto Mono;
         font-size: 15px;
         border: none;
         border-radius: 0;

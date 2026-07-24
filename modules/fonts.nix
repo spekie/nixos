@@ -13,6 +13,7 @@
     jetbrains-mono
   ] ++ (with nerd-fonts; [
     liberation
+    roboto-mono
     jetbrains-mono
   ]);
 

@@ -8,6 +8,8 @@
 
   programs.sway.extraPackages = with pkgs; [
     swaybg
+    swaylock
+    swayidle
     wmenu
     grim
     slurp
