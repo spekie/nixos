@@ -17,9 +17,9 @@ let
         if [[ ! -f "$cache/$thumbnail" ]]; then
           exit 1
         fi
-		    echo "$cache/$thumbnail"
-		    exit 0
-	    fi
+        echo "$cache/$thumbnail"
+        exit 0
+      fi
     fi
 
     thumbnail="$(uuidgen).jpg"

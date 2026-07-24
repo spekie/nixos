@@ -8,7 +8,7 @@
 
   hm.services.mpd = {
     enable = true;
-    musicDirectory = "/home/${config.hm.home.username}/Music";
+    musicDirectory = "/home/${config.username}/Music";
 
     extraConfig = ''
       audio_output {

@@ -4,7 +4,7 @@
 
 # Installation
 
-On a new NixOS installation, clone this repository:
+On a newly installed NixOS system, clone this repository:
 
 ```bash
 nix-shell -p git --command 'git clone https://github.com/spekie/nixos.git'
@@ -12,9 +12,7 @@ nix-shell -p git --command 'git clone https://github.com/spekie/nixos.git'
 
 ## Configure
 
-Create a new directory in [hosts](/hosts) named after your hostname and add your `configuration.nix` and `hardware-configuration.nix` there.
-
-Also create a new [options.nix](/hosts/nixbox/options.nix) file in the host directory and import it from [configuration.nix](/hosts/nixbox/configuration.nix)
+Create a new directory in [hosts](/hosts) named after your hostname and add your `configuration.nix` and `hardware-configuration.nix` there. Also create a new [options.nix](/hosts/nixbox/options.nix) file in the host directory and import it from [configuration.nix](/hosts/nixbox/configuration.nix)
 
 Add your hostname in [flake.nix](/flake.nix) replace the text `HOSTNAME` with your hostname:
 
@@ -31,5 +29,3 @@ nixosConfigurations.HOSTNAME = nixpkgs.lib.nixosSystem {
 ## Finalise 
 
 Rebuild using the flake and reboot the system.
-
-Extra drives, hardware configuration additions, or any other system-level configurations should be done in `configuration.nix`

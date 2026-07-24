@@ -27,8 +27,8 @@
         tooltip = false;
       };
       "mpd" = {
-        format = "{stateIcon}  {artist}  -  {title}";
-        format-stopped = "󰝚  Stopped";
+        format = "{stateIcon} {artist} - {title}";
+        format-stopped = "󰝚 Stopped";
         state-icons = {
           paused = "";
           playing = "";
@@ -37,13 +37,13 @@
         on-click = "rmpc update";
       };
       "wireplumber" = {
-        format = "{icon}  {volume}%";
+        format = "{icon} {volume}%";
         format-muted = "󰝟";
         format-icons = [ "󰕾" ];
         on-click = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
       };
       "battery" = {
-        format = "{icon}  {capacity}%";
+        format = "{icon} {capacity}%";
         format-icons = {
           default = [ "" "" "" "" "" ];
           charging = [ "󰢟" "󰢜" "󰂆" "󰂇" "󰂈" "󰢝" "󰂉" "󰢞" "󰂊" "󰂋" "󰂅" ];
@@ -79,7 +79,7 @@
         background: none;
       }
       button.focused {
-        color: #000;
+        color: ${config.color.additional};
         background-color: ${config.color.primary};
       }
       #clock,#battery,#mpd,#wireplumber,#tray { padding: 0 5px; }

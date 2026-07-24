@@ -7,6 +7,8 @@
     noto-fonts-cjk-sans
     noto-fonts-cjk-serif
     noto-fonts-color-emoji
+    font-awesome
+    open-sans
     lato
     roboto
     roboto-mono

@@ -10,21 +10,21 @@
       history = false;
 
       font = "monospace";
-      font-size = "14";
+      font-size = 14;
       horizontal = true;
       anchor = "top";
-      height = "30";
+      height = 30;
       width = "100%";
-      result-spacing = "15";
-      min-input-width = "120";
+      result-spacing = 15;
+      min-input-width = 120;
       prompt-text = " run: ";
 
-      border-width = "0";
-      outline-width = "0";
-      padding-top = "0";
-      padding-bottom = "0";
-      padding-left = "0";
-      padding-right = "0";
+      border-width = 0;
+      outline-width = 0;
+      padding-top = 0;
+      padding-bottom = 0;
+      padding-left = 0;
+      padding-right = 0;
 
       background-color = config.color.background;
       text-color = config.color.foreground;

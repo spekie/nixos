@@ -8,7 +8,7 @@
     ../../modules/sway
 
     ../../modules/programs/kitty.nix
-    ../../modules/programs/fish.nix
+    ../../modules/programs/bash.nix
     ../../modules/programs/lf.nix
     ../../modules/programs/firefox.nix
     ../../modules/programs/mpv.nix
@@ -32,6 +32,7 @@
     htop
     btop
     gotop
+    irssi
   ];
 
   username = "spekie";
@@ -41,7 +42,7 @@
 
   color.primary = "#e69d3b";
   color.secondary = "#e69d3b";
-  color.additional = "#e69d3b";
+  color.additional = "#000000";
   color.background = "#323232";
   color.foreground = "#ffffff";
 }

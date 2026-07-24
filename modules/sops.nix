@@ -5,5 +5,5 @@
 
   environment.systemPackages = with pkgs; [ sops ];
 
-  sops.age.keyFile = "${config.hm.home.homeDirectory}/.config/sops/age/keys.txt";
+  sops.age.keyFile = "/home/${config.username}/.config/sops/age/keys.txt";
 }

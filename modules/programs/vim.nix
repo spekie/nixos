@@ -11,15 +11,14 @@
 
     settings = {
       number = true;
-      tabstop = 4;
+      ignorecase = true;
+      tabstop = 2;
+      shiftwidth = 2;
     };
 
     extraConfig = ''
       syntax on 
       filetype plugin on 
-      set tabstop=2
-      set shiftwidth=2
-      set ignorecase
       set incsearch
       set noswapfile
       set nobackup
