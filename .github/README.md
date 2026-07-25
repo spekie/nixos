@@ -12,7 +12,9 @@ nix-shell -p git --command 'git clone https://github.com/spekie/nixos.git'
 
 ## Configure
 
-Create a new directory in [hosts](/hosts) named after your hostname and add your configs there. Also create a new [options.nix](/hosts/nixbox/options.nix) file and import it from [configuration.nix](/hosts/nixbox/configuration.nix)
+Create a new directory in [hosts](/hosts) named after your hostname and add your configs there.
+
+Also create a new [options.nix](/hosts/nixbox/options.nix) file and import it from [configuration.nix](/hosts/nixbox/configuration.nix)
 
 Add your hostname in [flake.nix](/flake.nix) replace the text `HOSTNAME` with your hostname:
 
