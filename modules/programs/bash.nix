@@ -14,9 +14,6 @@
       grep = "grep --color=auto";
       dir = "dir --color=auto";
       vdir = "vdir --color=auto";
-      ffmpeg = "ffmpeg -hide_banner";
-      ffprobe = "ffprobe -hide_banner";
-      ffplay = "ffplay -hide_banner";
     };
   };
 

@@ -13,11 +13,11 @@
     };
 
     colors = {
-      statusline = config.color.foreground;
-      background = config.color.background;
+      statusline = "#ffffff";
+      background = "#323232";
       inactiveWorkspace = {
-        border = config.color.background;
-        background = config.color.background;
+        border = "#323232";
+        background = "#323232";
         text = "#5c5c5c";
       };
     };

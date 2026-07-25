@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./colors.nix
+    ./theme.nix
     ./system.nix
     ./paths.nix
   ];

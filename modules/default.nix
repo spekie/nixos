@@ -6,7 +6,7 @@
     ./home-manager.nix
     ./nh.nix
     ./fonts.nix
-    ./theme.nix
+    ./gui.nix
     ./xdg.nix
     ./gpg.nix
     ./sops.nix
