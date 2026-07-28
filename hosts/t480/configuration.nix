@@ -125,4 +125,10 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   hardware.graphics.enable = true;
+
+  nixpkgs.config.allowUnfree = true;
+
+  boot.kernelPackages = pkgs.linuxPackages_latest; 
+
+  services.throttled.enable = true;
 }

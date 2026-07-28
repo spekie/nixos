@@ -7,8 +7,6 @@
     ./nh.nix
     ./fonts.nix
     ./gui.nix
-    ./xdg.nix
-    ./gpg.nix
     ./sops.nix
     ./wg.nix
   ];
@@ -18,6 +16,10 @@
     zip
     unzip
     wget
+    tree
     git
+    xdg-user-dirs
   ];
+
+  hm.xdg.enable = true;
 }

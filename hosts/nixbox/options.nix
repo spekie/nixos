@@ -33,6 +33,8 @@
     btop
     gotop
     irssi
+    discord
+    obs-studio
   ];
 
   username = "spekie";

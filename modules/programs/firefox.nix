@@ -11,6 +11,8 @@
         "browser.aboutwelcome.enabled" = false;
         "browser.newtabpage.enabled" = false;
         "browser.startup.homepage" = "chrome://browser/content/blanktab.html";
+        "browser.startup.homepage_override.mstone" = "ignore";
+        "browser.startup.page" = 0;
         "identity.fxaccounts.enabled" = false;
         "extensions.htmlaboutaddons.recommendations.enabled" = false;
         "extensions.getAddons.showPane" = false;
