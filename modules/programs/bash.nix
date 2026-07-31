@@ -14,6 +14,7 @@
       grep = "grep --color=auto";
       dir = "dir --color=auto";
       vdir = "vdir --color=auto";
+      diff = "diff --color=auto";
     };
   };
 

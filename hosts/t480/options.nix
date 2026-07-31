@@ -17,6 +17,7 @@
   ];
 
   environment.systemPackages = with pkgs; [
+    qbittorrent
     keepassxc
     ffmpeg
     zathura
@@ -27,11 +28,11 @@
   username = "spekie";
   hostname = "t480";
   flakePath = "/home/${config.username}/.config/nixos";
-  wallpaperPath = "/home/${config.username}/Pictures/Wallpapers/1351085837245.png";
+  wallpaperPath = "/home/${config.username}/Pictures/Wallpapers/wallhaven-l8dxer.png";
 
-  color.primary = "#e69d3b";
-  color.secondary = "#e69d3b";
-  color.additional = "#000000";
+  color.primary = "#700e92";
+  color.secondary = "#700e92";
+  color.additional = "#ffffff";
   color.background = "#323232";
   color.foreground = "#ffffff";
 }

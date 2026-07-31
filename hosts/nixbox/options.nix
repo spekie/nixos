@@ -22,19 +22,13 @@
   environment.systemPackages = with pkgs; [
     qbittorrent
     keepassxc
-    vscode
     ffmpeg
     mkvtoolnix-cli
-    clang
-    python3
     zathura
     ncdu
     htop
     btop
     gotop
-    irssi
-    discord
-    obs-studio
   ];
 
   username = "spekie";

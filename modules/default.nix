@@ -6,6 +6,7 @@
     ./home-manager.nix
     ./nh.nix
     ./fonts.nix
+    ./xdg.nix
     ./gui.nix
     ./sops.nix
     ./wg.nix
@@ -18,8 +19,5 @@
     wget
     tree
     git
-    xdg-user-dirs
   ];
-
-  hm.xdg.enable = true;
 }
