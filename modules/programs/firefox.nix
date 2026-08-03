@@ -19,15 +19,6 @@
         "media.videocontrols.picture-in-picture.video-toggle.enabled" = false;
         "general.autoScroll" = true;
 
-        # about:preferences#home
-        "browser.newtabpage.activity-stream.showSearch" = false;
-        "browser.newtabpage.activity-stream.widgets.weather.enabled" = false;
-        "browser.newtabpage.activity-stream.feeds.topsites" = false;
-        "browser.newtabpage.activity-stream.feeds.section.topstories" = false;
-        "browser.newtabpage.activity-stream.showSponsored" = false;
-        "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
-        "browser.newtabpage.activity-stream.showSponsoredCheckboxes" = false;
-
         # Disable DRM
         "media.gmp-widevinecdm.enabled" = false;
         "media.gmp-widevinecdm.visible" = false;

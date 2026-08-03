@@ -65,10 +65,7 @@
         background-color: ${config.color.background};
         color: ${config.color.foreground};
       }
-      button {
-        padding: 0 5px;
-        border: none;
-      }
+      button { padding: 0 5px; }
       button:hover,
       button.active,
       button.selected,
