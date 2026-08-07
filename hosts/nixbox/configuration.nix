@@ -32,6 +32,17 @@
 
   i18n.extraLocales = ["ja_JP.UTF-8/UTF-8"];
 
+  i18n.extraLocaleSettings = {
+    LC_TIME = "de_DE.UTF-8";
+    LC_MONETARY = "de_DE.UTF-8";
+    LC_PAPER = "de_DE.UTF-8";
+    LC_NAME = "de_DE.UTF-8";
+    LC_ADDRESS = "de_DE.UTF-8";
+    LC_TELEPHONE = "de_DE.UTF-8";
+    LC_MEASUREMENT = "de_DE.UTF-8";
+    LC_IDENTIFICATION = "de_DE.UTF-8";
+  };
+
   # console = {
   #   font = "Lat2-Terminus16";
   #   keyMap = "us";
@@ -58,6 +69,7 @@
   services.pipewire = {
     enable = true;
     alsa.enable = true;
+    alsa.support32Bit = true;
     pulse.enable = true;
   };
 
@@ -128,6 +140,8 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   hardware.graphics.enable = true;
+
+  hardware.graphics.enable32Bit = true;
 
   nixpkgs.config.allowUnfree = true;
 
