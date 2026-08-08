@@ -8,7 +8,6 @@
     settings = {
       enable_audio_bell = false;
       background_opacity = 0.8;
-      shell = "fish";
     };
   };
 }

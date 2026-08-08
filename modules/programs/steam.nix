@@ -1,7 +1,8 @@
 { config, lib, pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [
-    steam
-  ];
+  programs.steam.enable = true;
+
+  services.pipewire.alsa.support32Bit = true;
+  hardware.graphics.enable32Bit = true;
 }
