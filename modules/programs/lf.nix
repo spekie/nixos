@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 let
   cleaner = pkgs.writeShellScript "cleaner" ''

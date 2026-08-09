@@ -17,7 +17,6 @@
     swaybg
     grim
     slurp
-    imv
   ];
 
   hm.wayland.windowManager.sway = {

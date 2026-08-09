@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   environment.systemPackages = [ pkgs.wireguard-tools ];
@@ -8,5 +8,5 @@
     sopsFile = ../secrets/wg0.conf.bin;
   };
 
-  networking.wg-quick.interfaces.wg0.configFile = config.sops.secrets."wg0_config".path;
+  #networking.wg-quick.interfaces.wg0.configFile = config.sops.secrets."wg0_config".path;
 }
