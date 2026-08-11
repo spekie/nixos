@@ -131,6 +131,8 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
   fileSystems."/mnt/b" = {
     device = "/dev/disk/by-uuid/9b5bc326-530b-481f-b6a8-e56ea2aefaf0";
     fsType = "ext4";

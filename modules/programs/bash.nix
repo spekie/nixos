@@ -11,10 +11,10 @@
 
     shellAliases = {
       ls = "ls --color=auto --group-directories-first";
-      grep = "grep --color=auto";
-      dir = "dir --color=auto";
-      vdir = "vdir --color=auto";
-      diff = "diff --color=auto";
+      dir = "dir --color=auto --group-directories-first";
+      vdir = "vdir --color=auto --group-directories-first";
+      grep = "grep --color";
+      diff = "diff --color";
     };
   };
 

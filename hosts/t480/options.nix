@@ -23,6 +23,7 @@
     zathura
     ncdu
     htop
+    btop
     imv
   ];
 

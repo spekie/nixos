@@ -216,12 +216,12 @@
                                                     pane: Pane(Empty())
                                                 ),
                                                 (
-                                                    size: "50%",
+                                                    size: "30%",
                                                     pane: Pane(Queue)
                                                 ),
                                                 (
-                                                  size: "50%",
-                                                  pane: Pane(Cava)
+                                                    size: "70%",
+                                                    pane: Pane(Cava)
                                                 ),
                                             ]
                                         )
