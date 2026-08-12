@@ -1,5 +1,3 @@
-{ ... }:
-
 {
   hm.wayland.windowManager.sway = {
     config = rec {

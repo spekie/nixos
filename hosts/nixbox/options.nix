@@ -33,11 +33,11 @@
   username = "spekie";
   hostname = "nixbox";
   flakePath = "/home/${config.username}/.config/nixos";
-  wallpaperPath = "/home/${config.username}/Pictures/Wallpapers/1351085837245.png";
+  wallpaperPath = "/home/${config.username}/Pictures/Wallpapers/1753659656098814.png";
 
-  color.primary = "#e69d3b";
-  color.secondary = "#e69d3b";
-  color.additional = "#000000";
-  color.background = "#323232";
+  color.primary = "#ffffff";
+  color.secondary = "#ffffff";
+  color.additional = "#aaaaaa";
+  color.background = "#333333";
   color.foreground = "#ffffff";
 }

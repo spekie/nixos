@@ -1,5 +1,3 @@
-{ ... }:
-
 {
   programs.steam.enable = true;
   services.pipewire.alsa.support32Bit = true;

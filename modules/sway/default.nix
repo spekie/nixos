@@ -3,7 +3,7 @@
 {
   imports = [
     ./bindings.nix
-    ./waybar.nix
+    ./swaybar.nix
     ./tofi.nix
     ./mako.nix
   ];
@@ -17,6 +17,11 @@
     swaybg
     grim
     slurp
+    i3blocks
+    acpi
+    sysstat
+    tofi
+    mako
   ];
 
   hm.wayland.windowManager.sway = {
@@ -33,10 +38,17 @@
         border = config.color.primary;
         background = config.color.primary;
         text = config.color.foreground;
-        indicator = config.color.secondary;
+        indicator = config.color.primary;
         childBorder = config.color.primary;
       };
-   };
+      colors.unfocused = {
+        border = config.color.background;
+        background = config.color.background;
+        text = config.color.foreground;
+        indicator = config.color.background;
+        childBorder = config.color.background;
+      };
+    };
 
     config.output = {
       "DP-3" = {

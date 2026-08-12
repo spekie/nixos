@@ -1,8 +1,6 @@
-{ config, pkgs, ... }:
+{ config, ... }:
 
 {
-  environment.systemPackages = with pkgs; [ tofi ];
-
   hm.programs.tofi = {
     enable = true;
     settings = {

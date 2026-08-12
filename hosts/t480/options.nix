@@ -30,11 +30,11 @@
   username = "spekie";
   hostname = "t480";
   flakePath = "/home/${config.username}/.config/nixos";
-  wallpaperPath = "/home/${config.username}/Pictures/Wallpapers/wallhaven-l8dxer.png";
+  wallpaperPath = "/home/${config.username}/Pictures/Wallpapers/tranquility_tour7.jpg";
 
-  color.primary = "#700e92";
-  color.secondary = "#700e92";
-  color.additional = "#ffffff";
-  color.background = "#323232";
+  color.primary = "#ffffff";
+  color.secondary = "#ffffff";
+  color.additional = "#aaaaaa";
+  color.background = "#333333";
   color.foreground = "#ffffff";
 }

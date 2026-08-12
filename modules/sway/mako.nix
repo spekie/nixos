@@ -1,8 +1,6 @@
-{ config, pkgs, ... }:
+{ config, ... }:
 
 {
-  environment.systemPackages = with pkgs; [ mako ];
-
   hm.services.mako = {
     enable = true;
     settings = {
