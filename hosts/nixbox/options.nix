@@ -12,8 +12,6 @@
     ../../modules/programs/lf.nix
     ../../modules/programs/firefox.nix
     ../../modules/programs/mpv.nix
-    ../../modules/programs/mpd.nix
-    ../../modules/programs/rmpc.nix
     ../../modules/programs/neovim.nix
     ../../modules/programs/fastfetch.nix
     ../../modules/programs/steam.nix
@@ -24,10 +22,10 @@
     keepassxc
     ffmpeg
     zathura
+    imv
     ncdu
     htop
     btop
-    imv
   ];
 
   username = "spekie";

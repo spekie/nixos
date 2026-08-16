@@ -114,7 +114,7 @@ sub mpd {
     my $data = qx(mpc current);
     if (not $data eq '') {
         buttons("mpd");
-        print("󰝚 $data");
+        print(" $data");
               
         exit 0;
     }

@@ -30,8 +30,6 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
-  i18n.extraLocales = ["ja_JP.UTF-8/UTF-8"];
-
   # console = {
   #   font = "Lat2-Terminus16";
   #   keyMap = "us";
@@ -58,6 +56,7 @@
   services.pipewire = {
     enable = true;
     alsa.enable = true;
+    alsa.support32Bit = true;
     pulse.enable = true;
   };
 

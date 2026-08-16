@@ -25,7 +25,7 @@
       padding-right = 0;
 
       background-color = config.color.background;
-      text-color = config.color.foreground;
+      text-color = config.color.additional;
       selection-color = config.color.primary;
       border-color = config.color.primary;
     };

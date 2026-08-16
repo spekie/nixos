@@ -8,8 +8,6 @@
     ./fonts.nix
     ./xdg.nix
     ./gui.nix
-    ./sops.nix
-    ./wg.nix
   ];
 
   environment.systemPackages = with pkgs; [
