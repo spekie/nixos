@@ -15,6 +15,7 @@
 
   programs.sway.extraPackages = with pkgs; [
     swaybg
+    wmenu
     grim
     slurp
     i3blocks

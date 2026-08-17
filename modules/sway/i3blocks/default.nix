@@ -25,7 +25,7 @@
     [battery]
     command=./battery
     interval=1
-    LABEL=BAT
+    LABEL=BAT 
     BAT_NUMBER=1
 
     [cpu_usage]

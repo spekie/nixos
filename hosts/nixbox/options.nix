@@ -12,7 +12,8 @@
     ../../modules/programs/lf.nix
     ../../modules/programs/firefox.nix
     ../../modules/programs/mpv.nix
-    ../../modules/programs/neovim.nix
+    ../../modules/programs/vim.nix
+    ../../modules/programs/emacs.nix
     ../../modules/programs/fastfetch.nix
     ../../modules/programs/steam.nix
   ];
@@ -31,7 +32,7 @@
   username = "spekie";
   hostname = "nixbox";
   flakePath = "/home/${config.username}/.config/nixos";
-  wallpaperPath = "/home/${config.username}/Pictures/Wallpapers/1753659656098814.png";
+  wallpaperPath = "/home/${config.username}/Pictures/Wallpapers/gonunne.jpg";
 
   color.primary = "#ffffff";
   color.secondary = "#ffffff";
