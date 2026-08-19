@@ -5,6 +5,11 @@
     emacs
   ];
 
+  services.emacs = {
+    enable = true;
+    defaultEditor = true;
+  };
+
   hm.programs.emacs = {
     enable = true;
     extraConfig = ''
