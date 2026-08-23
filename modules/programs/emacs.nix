@@ -17,6 +17,10 @@
       (tool-bar-mode 0)
       (scroll-bar-mode 0)
       (global-display-line-numbers-mode)
+      (setq make-backup-files nil)
+      (setq auto-save-default nil)
+      (package-install 'ample-theme)
+      (load-theme 'ample t)
     '';
   };
 }
