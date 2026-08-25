@@ -15,14 +15,17 @@
 
   programs.sway.extraPackages = with pkgs; [
     swaybg
+    swayidle
+    swaylock
     wmenu
+    imv
     grim
     slurp
+    mako
     i3blocks
     acpi
     sysstat
     tofi
-    mako
   ];
 
   hm.wayland.windowManager.sway = {

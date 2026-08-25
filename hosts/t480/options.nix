@@ -21,7 +21,6 @@
     keepassxc
     ffmpeg
     zathura
-    imv
     ncdu
     htop
     btop

@@ -12,7 +12,7 @@
     ../../modules/programs/lf.nix
     ../../modules/programs/firefox.nix
     ../../modules/programs/mpv.nix
-    ../../modules/programs/emacs.nix
+    ../../modules/programs/vim.nix
     ../../modules/programs/fastfetch.nix
     ../../modules/programs/steam.nix
   ];
@@ -22,10 +22,11 @@
     keepassxc
     ffmpeg
     zathura
-    imv
     ncdu
     htop
     btop
+    anki
+    hugo
   ];
 
   username = "spekie";
