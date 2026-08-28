@@ -52,6 +52,11 @@
         indicator = config.color.background;
         childBorder = config.color.background;
       };
+
+      floating.criteria = [
+        { app_id = "xdg-desktop-portal-gtk"; }
+        { class = "steam"; }
+      ];
     };
 
     config.output = {
