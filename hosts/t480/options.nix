@@ -14,6 +14,7 @@
     ../../modules/programs/mpv.nix
     ../../modules/programs/emacs.nix
     ../../modules/programs/fastfetch.nix
+    ../../modules/programs/java.nix
   ];
 
   environment.systemPackages = with pkgs; [
