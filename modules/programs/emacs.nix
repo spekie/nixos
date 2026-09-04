@@ -8,6 +8,21 @@
   services.emacs = {
     enable = true;
     defaultEditor = true;
+    startWithGraphical = true;
+  };
+
+  hm.services.emacs = {
+    enable = true;
+    defaultEditor = true;
+    
+    client = {
+      enable = true;
+      arguments = [
+        "-c"
+        "-a"
+        "emacs"
+      ];
+    };
   };
 
   hm.programs.emacs = {
