@@ -7,7 +7,6 @@
 
   services.emacs = {
     enable = true;
-    defaultEditor = true;
     startWithGraphical = true;
   };
 
