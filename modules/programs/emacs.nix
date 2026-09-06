@@ -5,15 +5,10 @@
     emacs
   ];
 
-  services.emacs = {
-    enable = true;
-    startWithGraphical = true;
-  };
-
   hm.services.emacs = {
     enable = true;
     defaultEditor = true;
-    
+
     client = {
       enable = true;
       arguments = [
