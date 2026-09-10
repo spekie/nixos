@@ -7,9 +7,9 @@
 
     ../../modules/sway
 
-    ../../modules/programs/kitty.nix
+    ../../modules/programs/foot.nix
     ../../modules/programs/bash.nix
-    ../../modules/programs/lf.nix
+    ../../modules/programs/nautilus.nix
     ../../modules/programs/firefox.nix
     ../../modules/programs/mpv.nix
     ../../modules/programs/emacs.nix

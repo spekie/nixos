@@ -2,7 +2,7 @@
   hm.wayland.windowManager.sway = {
     config = rec {
       modifier = "Mod4";
-      terminal = "kitty";
+      terminal = "foot";
       menu = "tofi-drun";
     };
 
