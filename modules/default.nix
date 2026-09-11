@@ -18,4 +18,14 @@
     tree
     git
   ];
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nixpkgs.config.allowUnfree = true;
+
+  hardware.graphics.enable = true;
+
+  boot = {
+    kernelPackages = pkgs.linuxPackages_latest;
+    tmp.cleanOnBoot = true;
+  };
 }

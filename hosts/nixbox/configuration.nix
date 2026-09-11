@@ -124,14 +124,6 @@
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
   system.stateVersion = "26.05"; # Did you read the comment?
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-  hardware.graphics.enable = true;
-
-  nixpkgs.config.allowUnfree = true;
-
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-
   fileSystems."/mnt/b" = {
     device = "/dev/disk/by-uuid/9b5bc326-530b-481f-b6a8-e56ea2aefaf0";
     fsType = "ext4";
