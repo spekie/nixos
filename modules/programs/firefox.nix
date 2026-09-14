@@ -13,6 +13,7 @@
         "browser.startup.homepage" = "chrome://browser/content/blanktab.html";
         "browser.startup.homepage_override.mstone" = "ignore";
         "browser.startup.page" = 0;
+	"browser.translations.enable" = false;
         "identity.fxaccounts.enabled" = false;
         "extensions.htmlaboutaddons.recommendations.enabled" = false;
         "extensions.getAddons.showPane" = false;
