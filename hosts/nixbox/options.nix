@@ -9,7 +9,6 @@
 
     ../../modules/programs/foot.nix
     ../../modules/programs/bash.nix
-    ../../modules/programs/nautilus.nix
     ../../modules/programs/firefox.nix
     ../../modules/programs/mpv.nix
     ../../modules/programs/emacs.nix
@@ -18,15 +17,12 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    qbittorrent
-    keepassxc
     ffmpeg
     zathura
+    lf
     ncdu
     htop
     btop
-    anki
-    hugo
   ];
 
   username = "spekie";
